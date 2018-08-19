@@ -3,8 +3,13 @@
 const SUPPORT_EMAIL = 'support@email.com';
 const NOREPLY_EMAIL = 'no-reply@email.com';
 
-const MAILER_NAME = 'OpenTrade Mailer';
-const START_MESSAGE = 'OpenTrade started!';
+const MAILER_SMTP_HOST = 'smtp.zoho.com';
+const MAILER_SMTP_PORT = 465;
+const MAILER_SMTP_SECURE = true;
+const MAILER_SMTP_USER = 'myzoho@zoho.com';
+const MAILER_SMTP_PASS = 'myPassword';
+const MAILER_NAME = 'Flamecoin Exchange Mailer';
+const START_MESSAGE = 'Flamecoin Exchange started!';
 
 exports.ALLOW_EMAIL_CHANGING = true;
 
@@ -18,10 +23,10 @@ exports.share = {
    TRADE_COMISSION: 0.001,
    DUST_VOLUME: 0.000001,
    
-   my_portSSL: 40443,
+   my_portSSL: 443,
    
-   TRADE_MAIN_COIN: "Marycoin",
-   TRADE_MAIN_COIN_TICKER: "MC",
+   TRADE_MAIN_COIN: "LitecoinZ",
+   TRADE_MAIN_COIN_TICKER: "LTZ",
    TRADE_DEFAULT_PAIR: "Litecoin"
 };
 
@@ -29,7 +34,7 @@ exports.my_port = process.env.PORT || 40080;
 
 exports.SESSION_TIME = 3600*1000; //one hour
 
-exports.recaptcha_pub_key = "6LeX5SQUAAAAAKTieM68Sz4MECO6kJXsSR7_sGP1";
+exports.recaptcha_pub_key = "6LcweWoUAAAAAG_vmto101fQBbGsAYbTDR99YXXP";
 const MAX_IP_CONNECTIONS = 100;
 
 const DATABASE_PATH = './database/sqlite.db';
